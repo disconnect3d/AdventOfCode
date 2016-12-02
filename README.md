@@ -6,8 +6,10 @@ I might use various languages to provide solutions... will see how it goes ;).
 | Day | Name                                           | Solved with languages                        |
 |:---:|:-----------------------------------------------|:--------------------------------------------:|
 | 01  | No Time for a Taxicab                          | [Python](day01/main.py)                      |
+| 02  | Bathroom Security                              | [Python](day02/main.py)                      |
 
 [day1]: http://adventofcode.com/2016/day/1
+[day2]: http://adventofcode.com/2016/day/2
 
 
 ### Chocolate advent calendar
