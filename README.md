@@ -8,10 +8,12 @@ I might use various languages to provide solutions... will see how it goes ;).
 | 01  | No Time for a Taxicab                          | [Python](day01/main.py)                          |
 | 02  | Bathroom Security                              | [Python](day02/main.py)                          |
 | 03  | Squares With Three Sides                       | [Python](day03/main.py), [Go](day03/main.go)     |
+| 04  | Security Through Obscurity                     | [Python](day04/main.py)                          |
 
 [day1]: http://adventofcode.com/2016/day/1
 [day2]: http://adventofcode.com/2016/day/2
 [day3]: http://adventofcode.com/2016/day/3
+[day4]: http://adventofcode.com/2016/day/4
 
 
 ### Chocolate advent calendar
