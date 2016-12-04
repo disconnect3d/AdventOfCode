@@ -19,7 +19,7 @@ def is_valid_checksum(room, checksum):
     letters_count = Counter(room.replace('-', ''))
     sorted = list(letters_count.items())
     # thanks to this sorting key, items will be sorted by scores and then alphabetically
-    sorted.sort(key=lambda i: (i[1], (1000-ord(i[0]))), reverse=True)
+    sorted.sort(key=lambda i: (i[1], -ord(i[0])), reverse=True)
     
     top_five = ''.join(i[0] for i in sorted[:5])
     return top_five == checksum
