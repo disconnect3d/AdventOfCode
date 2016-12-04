@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 from __future__ import print_function
-from collections import defaultdict
+from collections import Counter
 from string import ascii_letters
 
 
@@ -16,18 +16,12 @@ def parse(line):
 
 
 def is_valid_checksum(room, checksum):
-    letters = defaultdict(lambda: 0)
-    
-    for c in room:
-        if c == '-':
-            continue
-        letters[c] += 1
-    
-    top_sorted = list(letters.items())
+    letters_count = Counter(room.replace('-', ''))
+    sorted = list(letters_count.items())
     # thanks to this sorting key, items will be sorted by scores and then alphabetically
-    top_sorted.sort(key=lambda i: (i[1], (1000-ord(i[0]))), reverse=True)
+    sorted.sort(key=lambda i: (i[1], (1000-ord(i[0]))), reverse=True)
     
-    top_five = ''.join(i[0] for i in top_sorted[:5])
+    top_five = ''.join(i[0] for i in sorted[:5])
     return top_five == checksum
 
 
@@ -53,12 +47,12 @@ def decrypt_room_name(room, sector_id):
 
 with open('input.txt') as f:
     rooms = f.read().split('\n')
-    
+
 print("Task 1")
 assert solve(testcase) == 1514
 print ("Task 1 solution =", solve(rooms))
 
-    
+
 
 print("Task 2")
 assert decrypt_room_name('qzmt-zixmtkozy-ivhz', 343) == 'very encrypted name'
