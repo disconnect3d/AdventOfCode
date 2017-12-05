@@ -43,9 +43,11 @@ fn parse_task2(line: &str) -> u32 {
 
     for i in 0 .. items.len() {
         for j in i+1 .. items.len() {
-            let val = match items[i] > items[j] {
-                true => items[i] as f64 / items[j] as f64,
-                false => items[j] as f64 / items[i] as f64,
+            let val = if items[i] > items[j] {
+                items[i] as f64 / items[j] as f64
+            }
+            else {
+                items[j] as f64 / items[i] as f64
             };
 
             if val.fract() == 0.0 {
