@@ -37,4 +37,4 @@ Advent of Code solutions by [disconnect3d](https://disconnect3d.pl/).
 ### Chocolate advent calendar 2016
 With each solved day, I ate a chocolate from an advent calendar:
 
-![My chocolate advent calendar](advent_calendar.gif)
+![My chocolate advent calendar](/2016/advent_calendar.gif)
