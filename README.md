@@ -16,15 +16,15 @@ Advent of Code solutions by [disconnect3d](https://disconnect3d.pl/).
 
 ## [Advent of Code 2016](https://adventofcode.com/2016/)
 
-| Day | Name                                           | Solved with languages                            |
-|:---:|:-----------------------------------------------|:------------------------------------------------:|
-| 01  | No Time for a Taxicab                          | [Python](day01/main.py)                          |
-| 02  | Bathroom Security                              | [Python](day02/main.py)                          |
-| 03  | Squares With Three Sides                       | [Python](day03/main.py), [Go](day03/main.go)     |
-| 04  | Security Through Obscurity                     | [Python](day04/main.py)                          |
-| 05  | How About a Nice Game of Chess?                | [Python](day05/main.py)                          |
-| 06  | Signals and Noise                              | [Python](day06/main.py)                          |
-| 07  | Internet Protocol Version 7                    | [Python](day07/main.py)                          |
+| Day | Name                                           | Solved with languages                                 |
+|:---:|:-----------------------------------------------|:-----------------------------------------------------:|
+| 01  | No Time for a Taxicab                          | [Python](2016/day01/main.py)                          |
+| 02  | Bathroom Security                              | [Python](2016/day02/main.py)                          |
+| 03  | Squares With Three Sides                       | [Python](2016/day03/main.py), [Go](day03/main.go)     |
+| 04  | Security Through Obscurity                     | [Python](2016/day04/main.py)                          |
+| 05  | How About a Nice Game of Chess?                | [Python](2016/day05/main.py)                          |
+| 06  | Signals and Noise                              | [Python](2016/day06/main.py)                          |
+| 07  | Internet Protocol Version 7                    | [Python](2016/day07/main.py)                          |
 
 [day1]: http://adventofcode.com/2016/day/1
 [day2]: http://adventofcode.com/2016/day/2
