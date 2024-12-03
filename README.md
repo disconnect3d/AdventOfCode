@@ -6,6 +6,7 @@ Advent of Code solutions by [disconnect3d](https://disconnect3d.pl/).
 |:---:|:------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------:|
 | 01  | [Historian Hysteria](https://adventofcode.com/2024/day/1)   | 1: [Python](/2024/day01/solve1.py), [TypeScript](/2024/day01/solve1.ts), 2: [TypeScript](/2024/day01/solve2.ts)             |
 | 02  | [Red-Nosed Reports](https://adventofcode.com/2024/day/2)    | [Python](/2024/day02/solve.py)                                                                                              |
+| 03  | [Mull It Over](https://adventofcode.com/2024/day/3)         | [Go](/2024/day03/solve.go)                                                                                                  |
 
 ## [Advent of Code 2017](https://adventofcode.com/2017/)
 
