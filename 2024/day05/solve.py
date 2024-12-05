@@ -46,13 +46,9 @@ print("Task 1:", middle_sum)
 # Task 2 - now count only incorrect ones after re-ordering them
 
 """
-Note: this comparison function is wrong! it doesn't do topological sort
-It won't work for a case of:
-    75, 97, 47, 61, 53
-Because it provides:
-    97, 75, 47, 61, 53
-While it should provide:
-    53, 61, 47, 75, 97
+Note: this comparison function makes no sense, but it is the first one i wrote
+It makes no sense bcoz it compares X,Y numbers, but not really their real order
+(X must be before Y, but it doesn't imply that X as a number is below Y etc)
 """
 @cmp_to_key
 def sorting_func(x, y):
@@ -60,7 +56,6 @@ def sorting_func(x, y):
         if (x, y) == rule:
             #print("Find", x, y)
             return y-x
-
     return 0
 
 
@@ -75,10 +70,10 @@ for (before, after) in rulesets:
 def cmp(a, b):
     if a in order[b]:
         #print("CmpA", a, b, order[b])
-        return -1
+        return 1
     if b in order[a]:
         #print("CmpB", a, b, order[a])
-        return 1
+        return -1
     return 0
 
 
@@ -92,14 +87,15 @@ for page in pages:
             continue
 
         if page.index(x) > page.index(y):
+            # Some code used to debug incorrect ordering of previous sort cmp func :)
             #old_page = page
             #print(old_page)
-            #page = sorted(page, key=sorting_func)
-            page2 = sorted(page, key=cmp)
+            page2 = sorted(page, key=sorting_func)
+            #page2 = sorted(page, key=cmp)
+            #print(page2)
             #if page != page2:
             #    print(old_page, page, page2)
             #    asdf
-            #print(old_page, "=>", page)
             ok = True
             break
 
